@@ -1,0 +1,140 @@
+body{
+    margin: 0;
+    width: 100%;
+}
+ul{
+    list-style: none;
+}
+.menu{
+    padding: 6px;
+    background-color: #407c97;
+}
+.menu span img{
+    width: 50px;
+    height:50px;
+    border-radius: 50%;
+}
+.menu .pic{
+    float: right;
+}
+.gridCon{
+    width: 98%;
+    margin:auto;
+    display: grid;
+    grid-template-columns: 23% 54% 20%;
+    gap: 20px;
+}
+.gridCon ul{
+    padding: 0px;
+}
+.grid div{
+    box-shadow: 2px 2px 6px 2px gray;
+    margin:20px 0;
+    padding:10px;
+}
+.gridCon .profile .one img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    display:block;
+    margin:auto
+}
+.gridCon .profile .one ul{
+    margin:20px 0;
+    border-top: 1px solid #D8D8D8;
+    list-style-type: square;
+    padding-left: 20px;
+}
+.gridCon .profile .one ul li{
+    margin:10px 0;
+    font-size: 18px;
+}
+.gridCon .profile .two{
+    background-color: #407c97;
+    color:#FFF;
+    cursor: pointer;
+}
+.gridCon .profile .two span{
+    display:block;
+}
+.gridCon .profile .two span:hover ul{
+    display:block;
+    background-color: #FFF;
+    color:#000;
+    padding:10px;
+}
+.gridCon .profile .two ul{
+    display:none;
+}
+.gridCon .profile .three span{
+    display:inline-block;
+    padding:5px;
+    margin:10px;
+    background-color: #407c97;
+    color: #FFF;
+}
+.gridCon .profile .four h3{
+    display:inline-block;
+}
+.gridCon .profile .four .cancel{
+    float: right;
+    background-color: red;
+    color:#FFF;
+    padding:5px;
+    font-size: 10px;
+}
+.gridCon .profile .four span{
+    display:block;
+}
+.posts .post input{
+    width: 90%;
+    padding: 15px;
+    margin:10px auto;
+    display:block;
+}
+ button{
+    background-color: #407c97;
+    border:none;
+    color:#FFF;
+    margin:10px;
+    padding:10px 15px;
+}
+.posts .post span{
+    display:block;
+    border-bottom: 1px solid #D8D8D8;
+    margin:20px;
+    padding:20px;
+}
+.posts .post span img{
+    width: 80px;
+    height: 80px;
+    border-radius:50%
+}
+.posts .post span em{
+    float: right;
+}
+.posts .post .postPic{
+    box-shadow: none;
+    width: 82%;
+    margin:auto;
+}
+.posts .post .postPic img{
+    width: 48%;
+    display:inline-block;
+}
+.posts .post .pic{
+    width: 80%;
+    display:block;
+    margin:auto;
+}
+.others{
+    text-align: center;
+}
+.events span img{
+    width: 40%;
+    display:block;
+    margin:auto;
+}
+.request span img{
+    width: 20%;
+}
