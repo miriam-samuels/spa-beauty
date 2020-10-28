@@ -2,139 +2,274 @@ body{
     margin: 0;
     width: 100%;
 }
-ul{
-    list-style: none;
+.top-bar{
+    background-color: #000;
+    display:flex;
+    align-items: center;
+    width: calc(100% - 20px);
+    padding: 10px;
 }
-.menu{
-    padding: 6px;
-    background-color: #407c97;
-}
-.menu span img{
-    width: 50px;
-    height:50px;
-    border-radius: 50%;
-}
-.menu .pic{
-    float: right;
-}
-.gridCon{
-    width: 98%;
-    margin:auto;
-    display: grid;
-    grid-template-columns: 23% 54% 20%;
-    gap: 20px;
-}
-.gridCon ul{
-    padding: 0px;
-}
-.grid div{
-    box-shadow: 2px 2px 6px 2px gray;
-    margin:20px 0;
-    padding:10px;
-}
-.gridCon .profile .one img{
-    width: 150px;
-    height: 150px;
-    border-radius: 100%;
-    display:block;
-    margin:auto
-}
-.gridCon .profile .one ul{
-    margin:20px 0;
-    border-top: 1px solid #D8D8D8;
-    list-style-type: square;
-    padding-left: 20px;
-}
-.gridCon .profile .one ul li{
-    margin:10px 0;
-    font-size: 18px;
-}
-.gridCon .profile .two{
-    background-color: #407c97;
-    color:#FFF;
-    cursor: pointer;
-}
-.gridCon .profile .two span{
-    display:block;
-}
-.gridCon .profile .two span:hover ul{
-    display:block;
-    background-color: #FFF;
-    color:#000;
-    padding:10px;
-}
-.gridCon .profile .two ul{
+.search-box{
     display:none;
 }
-.gridCon .profile .three span{
-    display:inline-block;
-    padding:5px;
-    margin:10px;
-    background-color: #407c97;
-    color: #FFF;
+.drp-nav .nav-content{
+    display:none;
+    position: absolute;
+    z-index: 1;
+    right: 0%;
+    top: 10%;
+    background-color: goldenrod;
+    list-style: none;
+    padding: 0px;
 }
-.gridCon .profile .four h3{
-    display:inline-block;
+.drp-nav .nav-content li{
+    margin:20px 9em 20px 15px;
 }
-.gridCon .profile .four .cancel{
+.drp-nav .nav-content li a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+.drp-nav .drp-btn{
+    position: absolute;
+    right: 5%;
+    background-color: goldenrod;
+    padding: 0 5px;
+    font-size: 25px;
+    border: none;
+}
+.drp-nav .drp-btn:hover{
+    background-color: gray;
+}
+.drp-nav:hover .nav-content{
+    display: block;
+}
+.drp-nav .drp-btn hr{
+    width: 15px;
+    margin: 5px;
+    height: 2px;
+    background-color: white;
+    border: none;
+}
+.top-img{
+    position: relative;
+}
+.top-img .img-con img{
+    width: 100%;
+    filter: brightness(55%);
+}
+.top-img .caption{
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform:translate(50%,-50%);
+    width: 100%;
+}
+.top-img .caption h2{
+    font-size: 16px;
+}
+.top-img .caption h1{
+    color: goldenrod;
+    font-size: 20px;
+}
+.top-img .caption .btns button{
+    background-color:rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px 15px;
+    border: none;
+}
+.top-img .caption .btns .prev{
+    float: left;
+}
+.top-img .caption .btns .next{
     float: right;
-    background-color: red;
-    color:#FFF;
-    padding:5px;
-    font-size: 10px;
 }
-.gridCon .profile .four span{
-    display:block;
-}
-.posts .post input{
-    width: 90%;
+.top-img .caption .relocate button{
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 1px solid white;
     padding: 15px;
-    margin:10px auto;
-    display:block;
+    margin: 10px;
+    width: 150px;
 }
- button{
-    background-color: #407c97;
-    border:none;
-    color:#FFF;
-    margin:10px;
-    padding:10px 15px;
+.top-img .caption .relocate{
+    position: relative;
 }
-.posts .post span{
-    display:block;
-    border-bottom: 1px solid #D8D8D8;
-    margin:20px;
-    padding:20px;
-}
-.posts .post span img{
-    width: 80px;
-    height: 80px;
-    border-radius:50%
-}
-.posts .post span em{
-    float: right;
-}
-.posts .post .postPic{
-    box-shadow: none;
-    width: 82%;
-    margin:auto;
-}
-.posts .post .postPic img{
-    width: 48%;
-    display:inline-block;
-}
-.posts .post .pic{
-    width: 80%;
-    display:block;
-    margin:auto;
-}
-.others{
+#services {
     text-align: center;
 }
-.events span img{
-    width: 40%;
-    display:block;
-    margin:auto;
+#services .massages{
+    width: 90%;
+    margin: auto;
 }
-.request span img{
-    width: 20%;
+#services .massages .massage-list{
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    margin: 4em 0 ;
+    padding: 5em 10px 2em 10px;
+    box-shadow: 2px 2px 6px 2px #D8D8D8;
+}
+#services .massages .massage-list img{
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -15%;
+    right: 50%;
+    display: block;
+    transform: translate(50%);
+}
+#services .massages .massage-list h3{
+    font-weight: 100;
+    font-size: 25px;
+}
+#services .massages .massage-list p{
+    line-height: 25px;
+    font-size: 14px;
+    width: 80%;
+    margin: auto;
+    color: gray;
+}
+#services .massages .massage-list hr{
+    width: 45px;
+    height: 2px;
+    border: none;
+    background-color: goldenrod;
+}
+#services .massages .massage-list button{
+    padding:10px 18px;
+    background-color: transparent;
+    border: 1px solid goldenrod;
+    margin-top: 20px;
+    font-size: 12px;
+}
+#services .massages .massage-list button:hover{
+    background-color: goldenrod;
+    border-color: white;
+    color: white;
+}
+.counter{
+    position: relative;
+}
+.counter .counter-img img{
+    width: 100%;
+    filter: brightness(25%);
+    height: 600px;
+
+}
+.counter .survey{
+    width: 80%;
+    height: 500px;
+    margin:auto;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform:translate(50%,-50%);
+    border: 2px solid white;
+    padding: 20px 0;
+}
+.counter .survey ul{
+    list-style: none;
+    text-align: center;
+    color: white;
+}
+.counter .survey ul li span{
+    display: block;
+    margin: 15px;
+    font-size: 14px;
+}
+.counter .survey ul li .count{
+    font-size: 55px;
+    margin: 5px;
+}
+.counter .survey ul li hr{
+    width: 50px;
+    height: 2px;
+    background-color: goldenrod;
+    border: none;
+}
+.about-container{
+    position: relative;
+}
+.about-container .about-img{
+    width: 100%;
+    position: relative;
+}
+.about-container .about-img::after{
+    content: "";
+    background-color: rgba(158, 156, 156, 0.4);
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+
+}
+
+.about-container .word-cover .about-word{
+    position: absolute;
+    top: 5%;
+    text-align: center;
+    border: 2px dashed white;
+    margin: 0 10px;
+    padding: 0 5px;
+}
+.about-container .word-cover .about-word div{
+    margin: 20px 0;
+    color: rgb(59, 59, 59);
+
+}
+.about-container .word-cover .about-word h3{
+    color: black;
+}
+.about-container .word-cover .about-word:hover h3{
+    color: goldenrod;
+}
+.about-container .word-cover .about-word h1{
+    font-weight: 100;
+    font-size: 30px;
+    text-align: left;
+}
+.about-container .word-cover .about-word img{
+    width: 60px;
+    border-radius: 50%;
+}
+.testimonial-container{
+    position: relative;
+}
+.testimonial-container img{
+    width: 100%;
+    filter: brightness(30%);
+    height: 550px;
+}
+.testimonial-container .our-tes{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform:translate(50%,-50%);
+    color: white; 
+    width: 98%;
+    text-align: center;  
+}
+.testimonial-container .our-tes blockquote{
+    line-height: 30px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.testimonial-container .our-tes h2{
+    color: goldenrod;
+}
+.testimonial-container .our-tes .pagination button{
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+.testimonial-container .our-tes .pagination .nav{
+    display: inline-block;
+    margin: 10px;
 }
