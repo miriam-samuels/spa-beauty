@@ -2,12 +2,18 @@ body{
     margin: 0;
     width: 100%;
 }
+section{
+    margin:20px 0;
+}
 .top-bar{
     background-color: #000;
     display:flex;
     align-items: center;
     width: calc(100% - 20px);
     padding: 10px;
+}
+.top-bar .logo img{
+    width: 75px;
 }
 .search-box{
     display:none;
@@ -159,12 +165,12 @@ body{
 .counter .counter-img img{
     width: 100%;
     filter: brightness(25%);
-    height: 600px;
+    height: 650px;
 
 }
 .counter .survey{
     width: 80%;
-    height: 500px;
+    height: 550px;
     margin:auto;
     position: absolute;
     top: 50%;
@@ -195,6 +201,7 @@ body{
 }
 .about-container{
     position: relative;
+    overflow-x: hidden;
 }
 .about-container .about-img{
     width: 100%;
@@ -273,3 +280,11 @@ body{
     display: inline-block;
     margin: 10px;
 }
+
+
+
+
+
+
+
+
