@@ -117,7 +117,7 @@ section{
 #services .massages .massage-list{
     position: relative;
     display: inline-block;
-    width: 300px;
+    width: 260px;
     margin: 4em 0 ;
     padding: 5em 10px 2em 10px;
     box-shadow: 2px 2px 6px 2px #D8D8D8;
@@ -426,7 +426,7 @@ section{
 }
 .teamPic{
     width: 90%;
-    margin: auto;
+    margin:0 auto;
     overflow: hidden;
 }
 .teamPic div{
@@ -451,4 +451,44 @@ section{
     color: rgb(112, 111, 111);
     line-height: 25px;
     font-size: 17px;
+}
+#theTeam .networkTeam span{
+    display: inline-block;
+    margin:0 10px 5em 10px;
+}
+#vidsec{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+#vidsec .vidimg img{
+    width: 100%;
+    filter: brightness(30%);
+    height: 650px;
+}
+#vidsec .vidcon{
+    position: absolute;
+    top: 10%;
+}
+#vidsec .vidcon .film video{
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+#vidsec .vidcon .vidword{
+    margin: 30px 0;
+}
+#vidsec .vidcon .vidword p{
+    line-height: 25px;
+    font-size: 18px;
+    padding: 10px;
+}
+#vidsec .vidcon .vidword button{
+    background-color: white;
+    color: black;
+    padding: 11px 15px;
+    border: none;
+    font-size: 16px;
+    margin: 10px;
+    width: 130px;
 }
