@@ -88,6 +88,7 @@ section{
     font-weight: bolder;
     padding: 10px 15px;
     border: none;
+    display: none;
 }
 .top-img .caption .btns .prev{
     float: left;
@@ -101,7 +102,7 @@ section{
     border: 1px solid white;
     padding: 15px;
     margin: 10px;
-    width: 150px;
+    width: 130px;
 }
 .top-img .caption .relocate{
     position: relative;
@@ -280,11 +281,174 @@ section{
     display: inline-block;
     margin: 10px;
 }
-
-
-
-
-
-
-
-
+#our-blog{
+    margin: 30px 0;
+    text-align: center;
+}
+.our-blog .blog{
+    width: 90%;
+    margin:30px auto;
+    position: relative;
+}
+.blog img{
+    width: 100%;
+}
+ .our-blog .blog .blogOverlay{
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    z-index: 1;
+    bottom: 0%;
+    color: white;
+    padding: 10px;
+    width: calc(100% - 20px);
+}
+.our-blog .blog .blogOverlay .blogWord{
+    border: 1px solid #bbbaba ;
+    height: 100%;
+}
+.our-blog .blog .blogOverlay .blogWord img{
+    width: 100px;
+    display: none;
+}
+.our-blog .blog .blogOverlay .blogWord h2{
+    color:goldenrod;
+}
+.our-blog .blog .blogOverlay .blogWord p{
+    display: none;
+}
+.our-blog .blog .blogOverlay:hover{
+    top: 0%;
+    bottom: 0%;
+}
+.our-blog .blog .blogOverlay:hover p,.our-blog .blog .blogOverlay:hover img{
+    display: block;
+}
+.our-blog .blog .blogOverlay:hover img{
+    margin: 3em auto;
+}
+.our-blog .blog .blogOverlay .blogWord span{
+    position: absolute;
+    bottom: 10%;
+} 
+#gallery {
+    text-align: center;
+}
+#gallery .galleryList{
+    padding: 0;
+    list-style: none;
+}
+#gallery .galleryList li{
+    padding: 25px 0;
+}
+#gallery .galleryList li:hover{
+    border-top: 1px solid goldenrod;    
+    border-bottom: 1px solid goldenrod;
+}
+#gallery .galleryImages{ 
+    display: grid;   
+    grid-template-columns: repeat(4,1fr);
+    gap: 0;
+    width: 100%;
+}
+#gallery .galleryImages .galleryImg .main img{
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    transition: transform 1s ;
+}
+#gallery .galleryImages .galleryImg{
+    position: relative;
+    overflow: hidden;
+}
+#gallery .galleryImages .galleryImg .main div{
+    position: absolute;
+    width: 100%;
+    color: white;
+    top: 0%;
+    bottom: 0%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+#gallery .galleryImages .galleryImg:hover .main img{
+    transform: scale(1.4,1.4)rotate(-20deg);
+}
+#gallery .galleryImages .galleryImg:hover .main div{
+    display: block;
+}
+#gallery .galleryImages .galleryImg:hover .main .main2 p{
+    width: 20px;
+    margin: 3px auto;
+    font-size: 20px;
+    font-weight: 900;
+    padding: 0 3px;
+    border: 3px solid goldenrod;
+    border-radius: 50%;
+}
+#gallery .galleryImages .galleryImg:hover .main .main2 b{
+    display: block;
+    font-size: 13px;
+    margin: 6px 0;
+}
+#gallery .galleryImages .galleryImg:hover .main .main2 em{
+    font-size: 11px;
+    display: block;
+    margin: 6px 0;
+    color: goldenrod;
+}
+#membership {
+    margin: 0;
+    padding: 10px 0;
+    background-color: goldenrod;
+    color: white;
+    text-align: center;
+}
+#membership h1{
+    margin: 5px 0;
+    font-weight: 400;
+}
+#membership p{
+    font-size: 16px;
+}
+#membership button{
+    padding: 10px;
+    margin: 10px;
+    border:none;
+    color: white;
+    background-color:black ;
+}
+#membership button:nth-child(2){
+    background-color: white;
+    color: black;
+}
+#theTeam{
+    text-align: center;
+}
+.teamPic{
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+.teamPic div{
+    display: inline-block;
+    width: 100%;
+}
+.teamPic div .pici{
+    overflow: hidden;
+}
+.teamPic div img{
+    width: 100%;
+    transition: transform 1s;
+}
+.teamPic div img:hover{
+    border: 2px solid goldenrod;
+    transform: scale(1.3,1.3)rotate(-10deg);
+}
+.teamPic em{
+    color: #D8D8D8;
+}
+.teamPic p{
+    color: rgb(112, 111, 111);
+    line-height: 25px;
+    font-size: 17px;
+}
