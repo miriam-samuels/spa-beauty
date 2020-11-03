@@ -61,7 +61,7 @@ section{
 .top-img{
     position: relative;
 }
-.top-img .img-con img{
+.img-con img{
     width: 100%;
     filter: brightness(55%);
 }
@@ -208,6 +208,9 @@ section{
     width: 100%;
     position: relative;
 }
+.about-container .about-img img{
+    opacity: 0.5;
+}
 .about-container .about-img::after{
     content: "";
     background-color: rgba(158, 156, 156, 0.4);
@@ -344,13 +347,13 @@ section{
     border-top: 1px solid goldenrod;    
     border-bottom: 1px solid goldenrod;
 }
-#gallery .galleryImages{ 
+.galleryImages{ 
     display: grid;   
     grid-template-columns: repeat(4,1fr);
     gap: 0;
     width: 100%;
 }
-#gallery .galleryImages .galleryImg .main img{
+ .galleryImg  img{
     width: 100%;
     display: block;
     margin: 0;
@@ -491,4 +494,276 @@ section{
     font-size: 16px;
     margin: 10px;
     width: 130px;
+}
+#pricing .priceCon{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    color: gray;
+}
+#pricing .priceCon .pricecat{
+    box-shadow: 3px 3px 7px 3px #D8D8D8;
+    margin: 30px 10px;
+    padding: 20px 0;
+}
+#pricing .priceCon .pricecat:hover{
+    border:1px solid goldenrod;
+    box-shadow: none;
+}
+#pricing .priceCon .pricecat:hover .priceImg img{
+    border-color: goldenrod;
+}
+#pricing .priceCon .pricecat:hover button{
+    background-color: goldenrod;
+    color: white;
+    border: transparent;
+}
+#pricing .priceCon .pricecat .priceImg img{
+    width: 100px;
+    border: 10px solid #D8D8D8 ;
+    border-radius: 50%;
+}
+#pricing .priceCon .pricecat ul{
+    padding: 0;
+    list-style: none;
+}
+#pricing .priceCon .pricecat ul li{
+    padding: 20px;
+    margin: 0 30px;
+    border-top: 1px solid #D8D8D8;
+}
+#pricing .priceCon .pricecat h1{
+    font-size: 30px;
+}
+#pricing .priceCon .pricecat .heading{
+    color: black;
+    font-weight: 100;
+}
+#pricing .priceCon .pricecat button{
+    padding: 15px 30px;
+    background-color: white;
+    border:1px solid #D8D8D8;
+    font-size: 15px;
+}
+#bottom {
+    position: relative;
+    background-image: url('./images/gallery-thumb-6.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    padding: 30px 0;
+}
+#bottom::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    opacity: 0.8;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+}
+#bottom .botcon{
+    position: absolute;
+    color: white;
+    z-index:1;
+}
+#bottom .botcon .bottomItem{
+    font-size: 20px;
+}
+#bottom .botcon .bottomItem .about {
+    margin: 10px 20px;
+}
+#bottom .botcon .bottomItem .about b{
+    font-size: 30px;
+    color: goldenrod;
+    position: absolute;
+    right: 10%;
+}
+#bottom .botcon .bottomItem .about input{
+    width: calc(100% - 30px);
+    /* display: block; */
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px 15px;
+    font-size: 20px;
+    border: 1px solid white;
+    color: white;
+}
+#bottom .botcon .bottomItem .about input:hover{
+    border-color: goldenrod;
+}
+#bottom .botcon .bottomItem .tweet {
+    margin: 10px 20px;
+}
+#bottom .botcon .bottomItem .tweet img{
+    width: 20px;
+}
+#bottom .botcon .bottomItem .galleryImages{
+    gap: 10px;
+}
+.footnav ul{
+    padding: 30px 0 0 0;
+    color: white;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid white;
+}
+.footnav ul li {
+    margin: 5px;
+}
+.footnav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+
+@media (min-width:600px){
+    .top-bar .logo img{
+        width: 150px;
+    }
+    .top-img .caption .btns button{
+        display: block;
+    }
+    .top-img .caption h2{
+        font-size: 20px;
+    }
+    .top-img .caption h1{
+        font-size: 30px;
+    }
+    #services .massages .massage-list{
+        margin: 4em 20px;
+    }
+    .counter .survey ul{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .counter .survey{
+        height: 300px;
+    }
+    .counter .counter-img img{
+        height: 400px;
+    }
+    .about-container .word-cover .about-word .hidden{
+        display: flex;
+    }
+    .about-container .word-cover .about-word .hidden img{
+        width: 80px;
+    }
+    .about-container .word-cover .about-word .hidden div:first-child{
+        width: 15%; 
+    }
+    .about-container .word-cover .about-word .hidden div{
+        width: 80%;
+        text-align: left;
+    }
+    .about-container .word-cover .about-word .hidden h3{
+        font-size: 30px;
+        margin: 10px 0;
+        font-weight: 100;
+    }
+    .about-container .word-cover .about-word{
+        border: 4px dashed white;
+        padding-bottom: 7em;
+    }
+    .about-container .about-img img{
+        height: 800px;
+    }
+    .testimonial-container .our-tes h1{
+        font-size: 40px;
+    }
+    .testimonial-container .our-tes h2{
+        font-size: 30px;
+    }
+    .testimonial-container .our-tes blockquote{
+        font-size: 18px;
+        line-height: 35px;
+    }
+    #gallery .galleryImages .galleryImg:hover .main .main2 p{
+        margin: 10px auto;
+        font-size: 30px;
+        width: 40px;
+        border: 6px solid goldenrod;
+    }
+    #gallery .galleryImages .galleryImg:hover .main .main2 b{
+        font-size: 25px;
+    }
+    #gallery .galleryImages .galleryImg:hover .main .main2 em{
+        font-size: 20px;
+    }
+    #vidsec .vidcon .vidword{
+        width: 94%;
+        margin: auto;
+    }
+    #vidsec .vidcon .vidword h1{
+        font-size: 40px;
+    }
+    #vidsec .vidcon .vidword p{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    #vidsec .vidimg img{
+        height: 750px;
+    }
+    footer .galleryImages {
+        display: block;
+    }
+    footer .galleryImages .galleryImg{
+        display: inline-block;
+        width: 100px;
+    }
+
+    .footnav ul li a{
+        font-size: 20px;
+        margin: 20px;
+    }
+}
+@media (min-width:1280px){
+    .top-bar{
+        width: calc(100% - 10em);
+        background-color: transparent;
+        position: absolute;
+        z-index: 1;
+        padding: 2em 5em;
+    }
+    .search-box{
+        margin:  0 30px;
+        display:block;
+        float: right;
+        position: absolute;
+        right: 8%;
+    }
+    .search-box button{
+        padding: 13px;
+        background-color: goldenrod;
+        border: none;
+        position: absolute;
+        color: white;
+        right: 0%;
+        font-weight: 900;
+    }
+    .search-box input{
+        background-color: rgba(255, 255, 255, 0.1);
+        width: 300px;
+        padding: 15px;
+        border: none;  
+        color: black;
+    }
+    .drp-nav .drp-btn{
+        display: none;
+    }
+    .drp-nav .nav-content{
+        border-top: 1px solid white;
+        display: block;
+        width: 80%;
+        top: 100%;
+        left: 8%;
+        background-color: transparent;
+        margin: 10px;
+    }
+    .drp-nav .nav-content li{
+        display: inline-block;
+        margin: 20px;
+        padding: 10px;
+    }
 }
