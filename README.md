@@ -1,2 +1,2 @@
 # dsc
-blah
+A project for DSCFUTA
