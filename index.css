@@ -249,6 +249,7 @@ section{
 .about-container .word-cover .about-word img{
     width: 60px;
     border-radius: 50%;
+    box-shadow: 2px 2px 5px 2px #D8D8D8;
 }
 .testimonial-container{
     position: relative;
@@ -287,11 +288,15 @@ section{
 #our-blog{
     margin: 30px 0;
     text-align: center;
+    width: 95%;
+    margin: auto;
 }
 .our-blog .blog{
-    width: 90%;
-    margin:30px auto;
+    display: inline-block;
+    width: 275px;
+    margin:30px 0px;
     position: relative;
+    box-shadow: 2px 2px 5px 2px #D8D8D8;
 }
 .blog img{
     width: 100%;
@@ -428,13 +433,15 @@ section{
     text-align: center;
 }
 .teamPic{
-    width: 90%;
-    margin:0 auto;
+    width: 95%;
+    margin: auto;
     overflow: hidden;
+    text-align: center;
 }
 .teamPic div{
     display: inline-block;
-    width: 100%;
+    width: 275px;
+    margin: 15px auto;
 }
 .teamPic div .pici{
     overflow: hidden;
@@ -446,6 +453,7 @@ section{
 .teamPic div img:hover{
     border: 2px solid goldenrod;
     transform: scale(1.3,1.3)rotate(-10deg);
+    filter: brightness(80%);
 }
 .teamPic em{
     color: #D8D8D8;
@@ -457,7 +465,7 @@ section{
 }
 #theTeam .networkTeam span{
     display: inline-block;
-    margin:0 10px 6em 10px;
+    margin:0 10px 0 10px;
 }
 #vidsec{
     position: relative;
@@ -496,15 +504,17 @@ section{
     width: 130px;
 }
 #pricing .priceCon{
-    width: 90%;
+    width: 95%;
     margin: auto;
     text-align: center;
     color: gray;
 }
 #pricing .priceCon .pricecat{
     box-shadow: 3px 3px 7px 3px #D8D8D8;
-    margin: 30px 10px;
+    margin: 30px auto;
     padding: 20px 0;
+    display: inline-block;
+    width: 275px;
 }
 #pricing .priceCon .pricecat:hover{
     border:1px solid goldenrod;
@@ -620,7 +630,7 @@ section{
 
 @media (min-width:600px){
     .top-bar .logo img{
-        width: 150px;
+        width: 130px;
     }
     .top-img .caption .btns button{
         display: block;
@@ -644,11 +654,19 @@ section{
     .counter .counter-img img{
         height: 400px;
     }
+    .our-blog .blog{
+        width: 300px;
+        margin:30px 20px;
+    }
     .about-container .word-cover .about-word .hidden{
         display: flex;
     }
-    .about-container .word-cover .about-word .hidden img{
-        width: 80px;
+    .about-container .word-cover .about-word img{
+        width: 60px;
+        border-radius: 50%;
+        box-shadow: 2px 2px 5px 2px #D8D8D8;
+        display: block;
+        margin: 0 20px;
     }
     .about-container .word-cover .about-word .hidden div:first-child{
         width: 15%; 
@@ -667,7 +685,11 @@ section{
         padding-bottom: 7em;
     }
     .about-container .about-img img{
-        height: 800px;
+        height: 720px;
+    }
+    .testimonial-container .our-tes{
+        width: 50%;
+        margin: auto;
     }
     .testimonial-container .our-tes h1{
         font-size: 40px;
@@ -678,6 +700,26 @@ section{
     .testimonial-container .our-tes blockquote{
         font-size: 18px;
         line-height: 35px;
+    }
+    .teamPic div{
+        display: inline-block;
+        width: 300px;
+        margin: 30px 20px;
+    }
+    #gallery .galleryList{
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #gallery .galleryList li{
+        padding: 15px 10px;
+        margin: 10px 20px;
+    }
+    #gallery .galleryList li:first-child{
+        border-top:1px solid goldenrod ;
+        border-bottom:1px solid goldenrod ;
     }
     #gallery .galleryImages .galleryImg:hover .main .main2 p{
         margin: 10px auto;
@@ -691,9 +733,16 @@ section{
     #gallery .galleryImages .galleryImg:hover .main .main2 em{
         font-size: 20px;
     }
+    #vidsec .vidcon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #vidsec .vidcon .film video{
+        width: 350px;
+    }
     #vidsec .vidcon .vidword{
-        width: 94%;
-        margin: auto;
+        width: 50%;
     }
     #vidsec .vidcon .vidword h1{
         font-size: 40px;
@@ -703,7 +752,14 @@ section{
         line-height: 30px;
     }
     #vidsec .vidimg img{
-        height: 750px;
+        height: 600px;
+    }
+    #pricing .priceCon{
+        width: 95%;
+    }
+    #pricing .priceCon .pricecat{
+        margin: 30px 20px;
+        width: 300px;
     }
     footer .galleryImages {
         display: block;
@@ -718,13 +774,13 @@ section{
         margin: 20px;
     }
 }
-@media (min-width:1280px){
+@media (min-width:1024px){
     .top-bar{
         width: calc(100% - 10em);
         background-color: transparent;
         position: absolute;
         z-index: 1;
-        padding: 2em 5em;
+        padding: 3em 5em 0 5em;
     }
     .search-box{
         margin:  0 30px;
@@ -765,5 +821,141 @@ section{
         display: inline-block;
         margin: 20px;
         padding: 10px;
+    }
+    .top-img .caption{
+        color: white;
+        text-align: center;
+        position: absolute;
+        top: 60%;
+        right: 50%;
+        transform:translate(50%,-50%);
+        width: 100%;
+    }
+    .top-img .caption h2{
+        font-size: 40px;
+    }
+    .top-img .caption h1{
+        font-size: 50px;
+    }
+    .about-container{
+        position: relative;
+        overflow-x: hidden;
+        width:80%;
+        border: 4px solid #D8D8D8;
+        margin: 3em auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-container .about-img{
+        position: relative;
+    }
+    .about-container .about-img img{
+        opacity: 1;
+    }
+    .about-container .about-img::after{
+        content: "";
+        background-color:rgba(138, 138, 138, 0);
+        position: absolute;
+        width: 75%;
+        top: 0%;
+        bottom: 0%;
+        right: 0%;
+        left: 0%;
+    }
+    
+    .about-container .word-cover .about-word{
+        position: relative;
+        text-align: center;
+        border: 2px dashed white;
+        margin: 0 10px;
+        padding: 0 5px;
+    }
+    .about-container .word-cover .about-word div{
+        margin: 20px 0;
+        color: rgb(59, 59, 59);
+    
+    }
+    .about-container .word-cover .about-word h3{
+        color: black;
+    }
+    .about-container .word-cover .about-word:hover h3{
+        color: goldenrod;
+    }
+    .about-container .word-cover .about-word h1{
+        font-weight: 100;
+        font-size: 30px;
+        text-align: left;
+    }
+    .about-container .word-cover .about-word img{
+        width: 60px;
+        border-radius: 50%;
+        margin:0 -10px;
+    }
+    #bottom .botcon .bottoms{
+        display: flex;
+    }
+    #bottom{
+        height: 400px;
+    }
+    .footnav{
+        display: block;
+        position: absolute;
+        bottom: -40%;
+        width: 100%;
+    }
+    .footnav ul li a{
+        font-size: 20px;
+        margin: 30px;
+    }
+    #pricing .priceCon .pricecat{
+        margin: 30px 20px;
+        width: 350px;
+    }
+    .our-blog .blog{
+        width: 350px;
+        margin:30px 20px;
+    }
+    .counter .survey ul{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 30px;
+
+    }
+    .counter .survey ul li{
+        padding: 20px;
+        border-right: 2px solid white;
+    }
+    .counter .survey ul li:last-child{
+        border: none;
+    }
+    .counter .survey{
+        width: 80%;
+        height: 200px;
+    }
+    #services .massages .massage-list{
+        width: 350px;
+    }
+    #services .massages .massage-list img{
+        width: 130px;
+    }
+    #services .massages .massage-list h3{
+ 
+        font-size: 30px;
+    }
+    #services .massages .massage-list p{
+        line-height: 30px;
+        font-size: 20px;
+    }
+    #services .massages .massage-list hr{
+        width: 60px;
+    }
+    #services .massages .massage-list button{
+        padding:14px 30px;
+        font-size: 15px;
+    }
+    #gallery .galleryImages .galleryImg:hover .main .main2 div {
+        padding-top: 5em;
     }
 }
