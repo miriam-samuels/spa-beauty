@@ -123,12 +123,15 @@ section{
     box-shadow: 2px 2px 6px 2px #D8D8D8;
 }
 #services .massages .massage-list img{
+    /* box-shadow: 1px 1px 4px 1px gainsboro; */
+    /* padding: 10px; */
     width: 100px;
     border-radius: 50%;
     position: absolute;
-    top: -15%;
-    right: 50%;
+    top: -10%;
+    right: 45%;
     display: block;
+    margin: auto;
     transform: translate(50%);
 }
 #services .massages .massage-list h3{
@@ -249,7 +252,7 @@ section{
 .about-container .word-cover .about-word img{
     width: 60px;
     border-radius: 50%;
-    box-shadow: 2px 2px 5px 2px #D8D8D8;
+    /* box-shadow: 2px 2px 5px 2px #D8D8D8; */
 }
 .testimonial-container{
     position: relative;
@@ -662,9 +665,9 @@ section{
         display: flex;
     }
     .about-container .word-cover .about-word img{
-        width: 60px;
+        width: 50px;
         border-radius: 50%;
-        box-shadow: 2px 2px 5px 2px #D8D8D8;
+        /* box-shadow: 2px 2px 5px 2px #D8D8D8; */
         display: block;
         margin: 0 20px;
     }
@@ -791,12 +794,15 @@ section{
     }
     .search-box button{
         padding: 13px;
-        background-color: goldenrod;
+        background-color: #daa520;
         border: none;
         position: absolute;
         color: white;
         right: 0%;
         font-weight: 900;
+    }
+    .search-box button img{
+        width: 10px;
     }
     .search-box input{
         background-color: rgba(255, 255, 255, 0.1);
@@ -888,7 +894,7 @@ section{
         text-align: left;
     }
     .about-container .word-cover .about-word img{
-        width: 60px;
+        width: 50px;
         border-radius: 50%;
         margin:0 -10px;
     }
@@ -938,7 +944,7 @@ section{
         width: 300px;
     }
     #services .massages .massage-list img{
-        width: 130px;
+        /* width: 130px; */
     }
     #services .massages .massage-list h3{
  
